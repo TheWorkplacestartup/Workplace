@@ -1,5 +1,11 @@
 <?php
 // Controler
 
-echo " testing 1";
+    if ($_SERVER['REQUEST_URI']== '/'){
+	echo file_get_contents ("../templates/index.html");
+	//Homepage
+	} else{
+	//Not Homepage
+}
+
 ?>
